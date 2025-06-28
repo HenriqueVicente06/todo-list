@@ -45,6 +45,8 @@ def remover_tarefa(tarefas, indice):
     else:
         print("\n❌ Índice inválido. Por favor, escolha um número da lista.")
 
+
+
 def exibir_menu():
     """Exibe o menu de opções para o usuário."""
     print("\n--- MENU ---")
@@ -60,6 +62,7 @@ def main():
     # A lista de tarefas (nosso vetor) é criada vazia aqui.
     # Ela existirá apenas enquanto o programa estiver em execução.
     lista_de_tarefas = []
+   
 
     while True:
         exibir_menu()
@@ -79,6 +82,8 @@ def main():
                 print("\n❌ Entrada inválida. Por favor, digite um número.")
         elif escolha == '4':
             listar_tarefas(lista_de_tarefas)
+        elif escolha == '5':
+            editar_descricao_tarefa(lista_de_tarefas)
             try:
                 indice = int(input("Digite o número da tarefa para remover: "))
                 remover_tarefa(lista_de_tarefas, indice)
