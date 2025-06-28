@@ -45,6 +45,10 @@ def remover_tarefa(tarefas, indice):
     else:
         print("\n❌ Índice inválido. Por favor, escolha um número da lista.")
 
+def editar_descricao_tarefa(tarefas):
+    #permitira editar a descrição de uma tarefa existente
+    listar_tarefas(tarefas)
+
 
 
 def exibir_menu():
@@ -83,7 +87,7 @@ def main():
         elif escolha == '4':
             listar_tarefas(lista_de_tarefas)
         elif escolha == '5':
-            editar_descricao_tarefa(lista_de_tarefas)
+            editar_descricao_tarefa(lista_de_tarefas) #vamos criar essa função no procimo commit
             try:
                 indice = int(input("Digite o número da tarefa para remover: "))
                 remover_tarefa(lista_de_tarefas, indice)
