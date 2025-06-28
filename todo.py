@@ -51,6 +51,9 @@ def editar_descricao_tarefa(tarefas):
     while True:
         indice = int(input("Digite o numero da tarefa qye voce deseja editar:")) -1
         if 0 <= indice < len(tarefas):
+            print(f"Descrição atual: {tarefas[indice]['descricao']}")
+
+            nova_descricao = input("Digite a nova descrição: ")
 
 
 
