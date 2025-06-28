@@ -48,6 +48,9 @@ def remover_tarefa(tarefas, indice):
 def editar_descricao_tarefa(tarefas):
     #permitira editar a descrição de uma tarefa existente
     listar_tarefas(tarefas)
+    while True:
+        indice = int(input("Digite o numero da tarefa qye voce deseja editar:")) -1
+        if 0 <= indice < len(tarefas):
 
 
 
