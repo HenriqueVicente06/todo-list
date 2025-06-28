@@ -54,6 +54,13 @@ def editar_descricao_tarefa(tarefas):
             print(f"Descrição atual: {tarefas[indice]['descricao']}")
 
             nova_descricao = input("Digite a nova descrição: ")
+           #verifica se a nova descrição nao esta vazia
+            if nova_descricao.strip() != "":
+                tarefas[indice]["descricao"] = nova_descricao
+                print("Descrição atualizada com sucesso!")
+                break
+            else:("A nova descrição nao pode ser vazia")
+        else:("indice invalido.Tente novamente")
 
 
 
